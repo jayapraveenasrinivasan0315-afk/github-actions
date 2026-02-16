@@ -1,3 +1,14 @@
-name: python-hello
+name: python script file
 on: push
 jobs:
+ python-hello:
+  run-on: ubuntu-latest
+ steps:
+  - name: check all files
+    uses: actions/checkout@v6
+  - name: set up the python
+    uses: actions/setup-python@v6
+    with:
+      python-version: '3.13'
+  - name: run the script
+    run: hello.py
