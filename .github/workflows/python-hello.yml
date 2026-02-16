@@ -12,3 +12,4 @@ jobs:
           python-version: '3.13'
       - name: run the script
         run: python hello.py
+        
