@@ -1,4 +1,4 @@
-name: python script file
+name: mail
 on: push
 jobs: 
   mail:
@@ -19,7 +19,7 @@ jobs:
           host: smtp.google.com
       # Optional port (defaults to 465)
           port: 465
-          account: ${{secrets.ACCOUNT}}
+          account: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: mail title.
           body: your messages.
