@@ -1,0 +1,12 @@
+name: cron
+on:
+  schedule:
+    - cron: '* * * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check all files
+        uses: actions/checkout@v6
+      - name: run the cron script
+        run: python hello.py
