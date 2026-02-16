@@ -4,7 +4,6 @@ on: push
 jobs:
   hello:
     runs-on: ubuntu-latest
-  steps:
-    - name: print hello
-      run: echo "hello"
-    
+    steps:
+      - name: print hello
+        run: echo "hello"
