@@ -1,0 +1,18 @@
+name: linux sample for github actions
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check all files
+        uses: actions/checkout@v6
+      - name: show a linux username
+        run: uname -a
+      - name: show a lst of files
+        run: ls -ltr
+      - name: show a current directory
+        run: pwd
+      - name: show a current date and time
+        run: date
