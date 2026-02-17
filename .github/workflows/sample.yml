@@ -12,7 +12,6 @@ jobs:
         run: uname -a
       - name: show a lst of files
         run: ls -ltr
-      - name: show a current directory
         run: pwd
       - name: show a current date and time
         run: date
