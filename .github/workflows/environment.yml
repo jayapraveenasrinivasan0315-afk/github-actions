@@ -1,6 +1,6 @@
 name: environment setup workflow
 on:
-workflow_dispatch:
+  workflow_dispatch:
 env:
   name: praveena
 jobs:
