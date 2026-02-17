@@ -10,8 +10,9 @@ jobs:
         uses: actions/checkout@v6
       - name: show a linux username
         run: uname -a
+      - name: show a current working directory
+        run: pwd
       - name: show a lst of files
         run: ls -ltr
-        run: pwd
       - name: show a current date and time
         run: date
