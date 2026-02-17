@@ -1,0 +1,16 @@
+name: environment setup workflow
+on:
+workflow_dispatch:
+env:
+  name: praveena
+jobs:
+  environment-setup:
+    runs-on: ubuntu-latest
+    env:
+      age: 20
+    steps:
+      - name: running a script
+        run: echo "my name is $name and my age is $age and i am from $place"
+        env:
+          place: india
+  
